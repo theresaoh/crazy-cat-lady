@@ -3,7 +3,7 @@ body {
 }
 
 .page-container {
-  background-color: black;
+  background: url('img/Background.png');
   display: flex;
   flex-direction: row;
   width: 100vw;
@@ -52,7 +52,6 @@ body {
   height: 66.11%
 }
 
-.footer {
-  background-color: blue;
-  height: 33.89%;
+.footer-text {
+  opacity: 1;
 }
