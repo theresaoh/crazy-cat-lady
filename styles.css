@@ -24,8 +24,6 @@ body {
   line-height: 46px;
   height: 90px;
   width: 312px;
-  top: 406px;
-  left: 113px;
   text-align: left;
   font-size: 36px;
   font-family: "Arial-BoldMT";
@@ -39,6 +37,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-footer-container {
@@ -159,16 +160,15 @@ button {
 
 .footer-container {
   height: 33.89%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-text {
   line-height: 28px;
   font-size: 18px;
   margin: 0;
-  top: 46.89%; 
-  right: 28.18%; 
-  bottom: 46.23%;
-  left: 27.73%;
   text-align: left;
   color: #CFCFD0;
   font-family: "ArialMT";
