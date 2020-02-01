@@ -63,7 +63,7 @@ body {
   width: 45.18%;
   min-width: 300px;
   height: 41.73%;
-  min-height: 250px;
+  min-height: 275px;
 }
 
 .icon-and-field {
@@ -212,7 +212,7 @@ button {
     margin: 5%;
     text-align: center;
     height: 10%;
-    font-size: 26px;
+    font-size: 30px;
   }
 
   #login-footer-container {
