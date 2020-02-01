@@ -14,10 +14,10 @@ body {
   background: url(https://s3.amazonaws.com/btp-front-end-testing/cats.jpg) center center no-repeat;
   background-color: rgba(248, 247, 216, 0.7);
   width: 38.89%;
-  background-size: 1400px 900px;
+  background-size: cover;
   height: 100%;
   position: relative;
-  background-position: left -434px top 0;
+  background-position: left -400px top 0;
 }
 
 .text-over-image {
@@ -29,7 +29,7 @@ body {
   text-align: left;
   font-size: 36px;
   font-family: "Arial-BoldMT";
-  position: absolute;
+  position: relative;
   margin: 0;
 }
 
@@ -47,12 +47,117 @@ body {
   width: 61.18%;
 }
 
-.login-content {
+.login-container {
   background-color: #EEEEEE;
-  height: 66.11%
+  height: 66.11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer {
+.login-form {
+  position: relative;
+  min-width: 398px;
+  height: 248.29px;
+}
+
+.icon-and-field {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #EF4C87;
+  margin: 0;
+  height: 63px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.icon {
+  height: 21px;
+  width: 20px;
+  margin-right: 28px;
+  margin-left: 10px;
+  top: 44px;
+  position: relative;
+}
+
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+label, input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+  opacity: .6;
+}
+
+label {
+  font-family: 'ArialMT';
+  font-size: 18px;
+  text-align: left;
+}
+
+input {
+  font-size: 18px;
+  line-height: 1.6;
+  border: 0;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+}
+
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  transform-origin: left bottom;
+  transform: translate(0, 2.125rem);
+}
+
+::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+input:focus {
+  font-family: 'Arial-BoldMT';
+  opacity: 1;
+}
+
+button {
+  width: 120px;
+  height: 60px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Arial-BoldMT';
+  background: #231F20 0% 0% no-repeat padding-box;
+  box-shadow: 0px 6px 13px #28282870;
+  letter-spacing: 1.6px;
+  color: #EF4C87;
+  opacity: 1;
+}
+
+.footer-container {
   height: 33.89%;
 }
 
@@ -72,4 +177,5 @@ body {
   align-items: center;
   height: 22px;
   width: 389px;
+  
 }
