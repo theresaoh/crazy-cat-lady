@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #282828;
 }
 
 #page-container {
@@ -96,7 +97,6 @@ body {
 
 label, input {
   transition: all 0.2s;
-  touch-action: manipulation;
   opacity: .6;
 }
 
