@@ -67,11 +67,15 @@ body {
 .icon-and-field {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid #EF4C87;
+  border-bottom: 1px solid rgba(0, 0, 0, .6);
   margin: 0;
   height: 63px;
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+
+.icon-and-field:focus-within {
+  border-bottom: 1px solid #EF4C87;
 }
 
 .icon {
