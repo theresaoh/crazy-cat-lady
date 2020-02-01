@@ -32,7 +32,8 @@ body {
 }
 
 #layer {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #FFFFFF;
+  opacity: .7;
   top: 0;
   left: 0;
   width: 100%;
