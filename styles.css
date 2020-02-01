@@ -191,6 +191,10 @@ button {
     justify-content: center;
     align-items: center;
   }
+
+  #login-container {
+    background: none;
+  }
   
   #cat-image {
     width: 100vw;
