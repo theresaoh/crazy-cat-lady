@@ -153,8 +153,8 @@ input:focus {
 }
 
 button {
-  width: 120px;
-  height: 60px;
+  width: 30.15%;
+  height: 21.82%;
   bottom: 0;
   right: 0;
   position: absolute;
@@ -187,8 +187,6 @@ button {
   display: flex;
   position: relative;
   align-items: center;
-  height: 22px;
-  width: 389px;
 }
 
 @media only screen and (max-width: 1024px) {
