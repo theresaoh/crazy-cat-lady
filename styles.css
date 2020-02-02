@@ -9,6 +9,7 @@ body {
   flex-direction: row;
   width: 100vw;
   height: 100vh;
+  min-width: 320px;
 }
 
 #cat-image {
@@ -19,6 +20,7 @@ body {
   height: 100%;
   position: relative;
   background-position: left -400px top 0;
+  min-width: 320px;
 }
 
 #text-over-image {
@@ -171,6 +173,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 320px;
 }
 
 #footer-text {
@@ -188,6 +191,15 @@ button {
 }
 
 @media only screen and (max-width: 1024px) {
+
+  @media (orientation: landscape) {
+    #text-over-image {
+      width: 100vw;
+      margin: 1% !important;
+      font-size: 20px !important;
+    }
+  }
+
   #page-container {
     flex-direction: column;
     justify-content: center;
@@ -212,7 +224,7 @@ button {
     margin: 5%;
     text-align: center;
     height: 10%;
-    font-size: 30px;
+    font-size: 26px !important;
   }
 
   #login-footer-container {
